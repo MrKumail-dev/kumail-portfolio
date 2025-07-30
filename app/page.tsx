@@ -46,10 +46,46 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <motion.div variants={stagger} initial="initial" animate="animate" className="grid lg:grid-cols-5 gap-12">
-            <div className="lg:col-span-3 space-y-8">
+          <motion.div
+            variants={stagger}
+            initial="initial"
+            animate="animate"
+            className="grid lg:grid-cols-5 gap-12"
+          >
+            {/* Image FIRST on mobile */}
+            <div className="lg:col-span-2 order-1 lg:order-2 flex justify-center lg:justify-end">
+              <motion.div variants={fadeIn} className="space-y-6 relative">
+                {/* Image */}
+                <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 bg-gray-100 overflow-hidden rounded-full">
+                  <img
+                    src="/pic-01.png"
+                    alt="DevOps Engineer"
+                    className="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-500"
+                  />
+                </div>
+
+                {/* CONNECT Section */}
+                <div className="absolute left-0 top-[270px] hidden lg:block">
+                  <h3 className="text-sm font-mono text-gray-500 mb-2">CONNECT</h3>
+                  <div className="flex space-x-4">
+                    <a href="#" className="text-gray-600 hover:text-black transition-colors">
+                      <Github className="w-5 h-5" />
+                    </a>
+                    <a href="#" className="text-gray-600 hover:text-black transition-colors">
+                      <Linkedin className="w-5 h-5" />
+                    </a>
+                    <a href="#" className="text-gray-600 hover:text-black transition-colors">
+                      <Mail className="w-5 h-5" />
+                    </a>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* Text content AFTER image on mobile */}
+            <div className="lg:col-span-3 space-y-8 order-2 lg:order-1">
               <motion.div variants={fadeIn}>
-                <h1 className="text-6xl lg:text-8xl font-light leading-none tracking-tight">
+                <h1 className="text-5xl sm:text-6xl lg:text-8xl font-light leading-none tracking-tight">
                   INFRASTRUCTURE
                   <br />
                   <span className="text-gray-500">ENGINEER</span>
@@ -73,38 +109,8 @@ export default function HomePage() {
                 </button>
               </motion.div>
             </div>
-
-            <div className="lg:col-span-2 flex justify-end">
-                <motion.div variants={fadeIn} className="space-y-6 relative">
-                  
-                  {/* Image */}
-                  <div className="w-64 h-64 bg-gray-100 overflow-hidden rounded-full ml-auto">
-                    <img
-                      src="/pic-01.png"
-                      alt="DevOps Engineer"
-                      className="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-500"
-                    />
-                  </div>
-
-                  {/* CONNECT Section - Outside bottom-left of image */}
-                  <div className="absolute left-0 top-[270px]">  {/* Adjust top as needed */}
-                    <h3 className="text-sm font-mono text-gray-500 mb-2">CONNECT</h3>
-                    <div className="flex space-x-4">
-                      <a href="#" className="text-gray-600 hover:text-black transition-colors">
-                        <Github className="w-5 h-5" />
-                      </a>
-                      <a href="#" className="text-gray-600 hover:text-black transition-colors">
-                        <Linkedin className="w-5 h-5" />
-                      </a>
-                      <a href="#" className="text-gray-600 hover:text-black transition-colors">
-                        <Mail className="w-5 h-5" />
-                      </a>
-                    </div>
-                  </div>
-
-                </motion.div>
-              </div>
           </motion.div>
+
         </div>
       </section>
 
