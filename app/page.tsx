@@ -28,7 +28,7 @@ export default function HomePage() {
         className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-sm border-b border-gray-200"
       >
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="font-mono text-sm">DEVOPS.ENGINEER</div>
+          <div className="font-mono text-xl">Kumail</div>
           <div className="hidden md:flex space-x-8 text-sm">
             <a href="#about" className="hover:text-gray-600 transition-colors">
               ABOUT
@@ -75,33 +75,35 @@ export default function HomePage() {
             </div>
 
             <div className="lg:col-span-2 flex justify-end">
-              <motion.div variants={fadeIn} className="space-y-6">
-                {/* Profile Image - positioned to the right */}
-                <div className="w-64 h-64 bg-gray-100 overflow-hidden ml-auto">
-                  <img
-                    src="/placeholder.svg?height=400&width=400"
-                    alt="DevOps Engineer"
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                  />
-                </div>
-
-                {/* Keep only the Connect section */}
-                <div className="ml-auto w-64">
-                  <h3 className="text-sm font-mono text-gray-500 mb-3">CONNECT</h3>
-                  <div className="flex space-x-4">
-                    <a href="#" className="text-gray-600 hover:text-black transition-colors">
-                      <Github className="w-5 h-5" />
-                    </a>
-                    <a href="#" className="text-gray-600 hover:text-black transition-colors">
-                      <Linkedin className="w-5 h-5" />
-                    </a>
-                    <a href="#" className="text-gray-600 hover:text-black transition-colors">
-                      <Mail className="w-5 h-5" />
-                    </a>
+                <motion.div variants={fadeIn} className="space-y-6 relative">
+                  
+                  {/* Image */}
+                  <div className="w-64 h-64 bg-gray-100 overflow-hidden rounded-full ml-auto">
+                    <img
+                      src="/pic-01.png"
+                      alt="DevOps Engineer"
+                      className="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-500"
+                    />
                   </div>
-                </div>
-              </motion.div>
-            </div>
+
+                  {/* CONNECT Section - Outside bottom-left of image */}
+                  <div className="absolute left-0 top-[270px]">  {/* Adjust top as needed */}
+                    <h3 className="text-sm font-mono text-gray-500 mb-2">CONNECT</h3>
+                    <div className="flex space-x-4">
+                      <a href="#" className="text-gray-600 hover:text-black transition-colors">
+                        <Github className="w-5 h-5" />
+                      </a>
+                      <a href="#" className="text-gray-600 hover:text-black transition-colors">
+                        <Linkedin className="w-5 h-5" />
+                      </a>
+                      <a href="#" className="text-gray-600 hover:text-black transition-colors">
+                        <Mail className="w-5 h-5" />
+                      </a>
+                    </div>
+                  </div>
+
+                </motion.div>
+              </div>
           </motion.div>
         </div>
       </section>
