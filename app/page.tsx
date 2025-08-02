@@ -95,7 +95,7 @@ export default function HomePage() {
               <motion.div variants={fadeIn} className="max-w-2xl">
                 <p className="text-xl text-gray-600 leading-relaxed font-light">
                   I build and scale cloud infrastructure. Currently focused on Kubernetes orchestration, CI/CD
-                  automation, and infrastructure as code. Based in San Francisco.
+                  automation, and infrastructure as code. Based in Pakistan.
                 </p>
               </motion.div>
 
@@ -127,12 +127,12 @@ export default function HomePage() {
             <div className="grid md:grid-cols-2 gap-12 text-gray-700 leading-relaxed">
               <div className="space-y-6">
                 <p>
-                  With over 5 years of experience in DevOps and cloud infrastructure, I specialize in building scalable,
+                  With over 1 year of experience in DevOps and cloud infrastructure, I specialize in building scalable,
                   reliable systems that power modern applications.
                 </p>
                 <p>
-                  I've worked with startups and enterprise companies, helping them migrate to cloud-native
-                  architectures, implement Infrastructure as Code, and establish monitoring practices.
+                  I've worked as a Junior DevOps engineer in ComputeOnCloud. Throughout this, i learned some important
+                  things about devops and how its implemented in a professional behaviour.
                 </p>
               </div>
               <div className="space-y-6">
@@ -141,8 +141,8 @@ export default function HomePage() {
                   systems that are not just functional, but maintainable and scalable.
                 </p>
                 <p>
-                  When I'm not optimizing deployments, you'll find me contributing to open-source projects or exploring
-                  the latest in cloud technologies.
+                  When I'm not optimizing deployments, you'll find me in games like counter-strike 2 and apex legend.
+                  Don't be surprised if you find me there someday!
                 </p>
               </div>
             </div>
